@@ -1,0 +1,16 @@
+.description{
+    padding: 0 20px 20px;
+    word-break: break-word;
+    text-align: start;
+}
+.name{
+    font-weight: bold;
+    margin: 10px 0;
+}
+.price{
+    font-weight: bold;
+}
+.img{
+    width: 300px;
+    height: 130px;
+}
