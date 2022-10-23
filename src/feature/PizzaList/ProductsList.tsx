@@ -14,7 +14,7 @@ const ProductsList = () => {
     }, [])
 
     return (
-        <>
+        <div className={'ProductsWrapper'}>
             {loadingStatus === 'loading' && <LoadingScreen isDarken={true}/>}
             {products && products.map(p => {
                 return (
@@ -23,7 +23,7 @@ const ProductsList = () => {
                     </div>
                 )
             })}
-        </>
+        </div>
     );
 };
 
