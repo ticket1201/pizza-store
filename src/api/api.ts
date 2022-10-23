@@ -1,4 +1,6 @@
 import axios from 'axios';
+import {cartFormInputs} from '../feature/Cart/CartForm/CartForm';
+import {CardProductType} from '../feature/Cart/cartReducer';
 
 export type ProductType = {
     id: number
@@ -8,6 +10,8 @@ export type ProductType = {
     price: number
 }
 
+type OrderData = cartFormInputs & {products: CardProductType[]}
+
 const instance = axios.create({
     baseURL: 'https://firstbackapp.herokuapp.com/',
 });
@@ -16,5 +20,8 @@ const instance = axios.create({
 export const productsApi = {
     fetchProducts() {
         return instance.get<ProductType[]>('products')
+    },
+    putOrder(data:OrderData){
+        return instance.post('/order',data)
     }
 }
