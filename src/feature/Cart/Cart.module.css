@@ -1,0 +1,41 @@
+.cartWrapper {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.cartsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cartsList p{
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.cartItem {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 170px 1fr 100px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+}
+
+.total {
+    text-align: start;
+    font-weight: bold;
+}
+
+.textWrapper {
+    text-align: start;
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+}
