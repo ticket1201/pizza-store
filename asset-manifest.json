@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ticket1201.github.io/pizza-store/static/css/main.0fcbef9e.css",
+    "main.js": "/ticket1201.github.io/pizza-store/static/js/main.767ba952.js",
+    "static/js/787.44427992.chunk.js": "/ticket1201.github.io/pizza-store/static/js/787.44427992.chunk.js",
+    "index.html": "/ticket1201.github.io/pizza-store/index.html",
+    "main.0fcbef9e.css.map": "/ticket1201.github.io/pizza-store/static/css/main.0fcbef9e.css.map",
+    "main.767ba952.js.map": "/ticket1201.github.io/pizza-store/static/js/main.767ba952.js.map",
+    "787.44427992.chunk.js.map": "/ticket1201.github.io/pizza-store/static/js/787.44427992.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fcbef9e.css",
+    "static/js/main.767ba952.js"
+  ]
+}
