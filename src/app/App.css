@@ -3,12 +3,33 @@
 }
 
 .ProductsWrapper{
-  position: relative;
+  max-width: 1200px;
   box-sizing: border-box;
-  min-height: calc(100vh - 40px);;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 30px 25px;
+  padding: 80px 25px 30px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 80px 25px 30px;
+  min-height: calc(100vh);;
+  max-width: 1200px;
+}
+
+.MuiAppBar-positionFixed{
+  align-items: center;
+  padding: 0 30px;
+  justify-content: center;
+}
+
+.MuiAppBar-positionFixed .headerInner{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
 }
