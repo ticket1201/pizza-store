@@ -39,3 +39,27 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 920px) {
+    .cartItem {
+        max-width: 300px;
+        justify-items: center;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: inherit;
+    }
+
+    .textWrapper {
+        text-align: center;
+    }
+
+    .cartsList p {
+        text-align: center;
+    }
+
+    .cartWrapper {
+        justify-items: center;
+        grid-template-columns: inherit;
+        gap: 10px;
+    }
+}

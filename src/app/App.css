@@ -21,6 +21,12 @@
   max-width: 1200px;
 }
 
+@media screen and (max-width: 920px) {
+  .wrapper .MuiPaper-root{
+    max-width: 300px;
+  }
+}
+
 .MuiAppBar-positionFixed{
   align-items: center;
   padding: 0 30px;
