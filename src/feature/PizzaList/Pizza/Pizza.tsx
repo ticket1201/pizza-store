@@ -20,7 +20,7 @@ const Pizza = (props:PizzaPropsType) => {
     }
 
     return (
-        <Paper sx={{maxWidth:300}}>
+        <Paper sx={{maxWidth:300, height: '100%'}}>
             <div className={s.img}><img src={imageUrl} alt={name}/></div>
             <h2 className={s.name}>{name}</h2>
             <div>
