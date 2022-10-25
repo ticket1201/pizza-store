@@ -1,7 +1,7 @@
 {
   "name": "pizza-store",
   "version": "0.1.0",
-  "homepage": "ticket1201.github.io/pizza-store/",
+  "homepage": "https://ticket1201.github.io/pizza-store/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
