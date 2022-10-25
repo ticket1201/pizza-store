@@ -3,7 +3,6 @@ import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 const slice = createSlice({
     name: 'app',
     initialState: {
-        isInitialized: true,
         appStatus: 'loading',
         error: null
     } as AppStateType,
@@ -11,7 +10,7 @@ const slice = createSlice({
         changeAppStatus(state,action: PayloadAction<{ status: appStatus }>){
             state.appStatus = action.payload.status
         },
-        setError(state,action: PayloadAction<{ error: string | null }>){
+        setError(state, action: { payload: { error: string } }){
             state.error = action.payload.error
         }
     }
@@ -24,8 +23,7 @@ export type appActions =
      | ReturnType<typeof changeAppStatus>
      | ReturnType<typeof setError>
 
-type AppStateType = {
-    isInitialized: boolean
+export type AppStateType = {
     appStatus: appStatus
     error: null | string
 }
