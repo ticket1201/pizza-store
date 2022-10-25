@@ -17,7 +17,7 @@ const Cart = () => {
             <div className={`${s.cartWrapper} wrapper`}>
                 <div>
                     <h3>Cart is empty</h3>
-                    <Button onClick={() => {
+                    <Button variant={'contained'} onClick={() => {
                         navigate('/')
                     }}>Back to Pizza</Button>
                 </div>
