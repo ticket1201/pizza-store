@@ -3,7 +3,7 @@ import {productsApi, ProductType} from '../../api/api';
 import {cartFormInputs,} from './CartForm/CartForm';
 import {RootStateType} from '../../app/store';
 
-let initialState:initialStateType = {
+let initialState:cartStateType = {
     products: [],
     totalPrice: 0
 }
@@ -57,7 +57,7 @@ export type CartActions =
     | ReturnType<typeof addToCart>
     | ReturnType<typeof removeFromCart>
 
-type initialStateType = {
+export type cartStateType = {
     products: Array<CardProductType>
     totalPrice: number
 }
