@@ -33,17 +33,16 @@ const CartForm = () => {
         }
     }
     return (
-        /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
         <Paper sx={{height: 'fit-content', padding: '15px', boxShadow: `3px 3px 10px 3px #dddddd`, borderRadius:'10px'}}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h2>Confirmation form</h2>
-                <TextField {...register('name', {required: true, pattern: /^([А-ЯЁ][а-яё]{1,29})|([A-Z][a-z]{1,29})$/u})} label={'Name'} margin="normal"
+                <TextField {...register('name', {required: true, pattern: /^([А-ЯЁа-яё]{2,29})|([A-Za-z]{2,29})$/u})} label={'Name'} margin="normal"
                            error={!!errors.name}/>
-                <TextField {...register('surname', {required: true, pattern: /^([А-ЯЁ][а-яё]{1,29})|([A-Z][a-z]{1,29})$/u})} label={'Surname'} margin="normal"
+                <TextField {...register('surname', {required: true, pattern: /^([А-ЯЁа-яё]{2,29})|([A-Za-z]{2,29})$/u})} label={'Surname'} margin="normal"
                            error={!!errors.surname}/>
-                <TextField {...register('address', {required: true, pattern:  /^([А-ЯЁ][а-яё]{1,29})|([A-Z][a-z]{1,29})$/u})} label={'Address'} margin="normal"
+                <TextField {...register('address', {required: true, pattern:  /^([А-ЯЁа-яё]{3,29})|([A-Za-z]{3,29})$/u})} label={'Address'} margin="normal"
                            error={!!errors.address}/>
-                <TextField {...register('phone', {required: true, pattern: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/})} label={'Phone'} margin="normal"
+                <TextField {...register('phone', {required: true, pattern: /^[+]?[(]?[0-9]{3}[)]?[-\s]?[0-9]{3}[-\s]?[0-9]{4,6}$/})} label={'Phone'} margin="normal"
                            error={!!errors.phone}/>
                 <div style={{maxWidth:210, margin: '16px auto'}}>
                     <Button type={'submit'} variant={'contained'} fullWidth>Confirm</Button>
