@@ -13,7 +13,7 @@ export type ProductType = {
 type OrderData = cartFormInputs & {products: CardProductType[]}
 
 const instance = axios.create({
-    baseURL: 'https://firstbackapp.herokuapp.com/',
+    baseURL: 'https://first-back-express-production.up.railway.app/',
 });
 
 
