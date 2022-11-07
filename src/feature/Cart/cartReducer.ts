@@ -15,6 +15,9 @@ export const sendOrder = createAsyncThunk('cart/sendOrder', async (personInfo:ca
         dispatch(clearCart())
         return true
     }
+    else{
+        return rejectWithValue(null)
+    }
 })
 
 
